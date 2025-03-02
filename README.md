@@ -256,3 +256,178 @@ These can only be done by admins!
     ```
     HttpCode 204
     ```
+
+
+
+### /genres
+
+- **GET /**
+  - **output format**
+    ```json
+    [
+      {
+        "id":           "integer",
+        "description":  "string"
+      }
+    ]
+    ```
+- **GET /:id  |  id: number**
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "description":  "string"
+    }
+    ```
+
+- **POST /** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "description":  "string"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "description":  "string",
+    }
+    ```
+  
+- **PUT /:id  |  id: number** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "description":  "string, optional"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "description":  "string",
+    }
+    ```
+
+- **DELETE /:id  |  id: number** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```
+    HttpCode 204
+    ```
+
+
+
+### /books
+
+- **GET /?authorId&genreId  |  authorId: number, optional; genreId: number, optional**
+  - **output format**
+    ```json
+    [
+      {
+        "id":           "integer",
+        "authorId":     "integer",
+        "genreId":      "integer",
+        "title":        "string",
+        "description":  "string"
+      }
+    ]
+    ```
+- **GET /:id  |  id: number**
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "authorId":     "integer",
+      "genreId":      "integer",
+      "title":        "string",
+      "description":  "string"
+    }
+    ```
+- **POST /** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "authorId":     "integer",
+        "genreId":      "integer",
+        "title":        "string",
+        "description":  "string"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "authorId":     "integer",
+      "genreId":      "integer",
+      "title":        "string",
+      "description":  "string"
+    }
+    ```
+- **PUT /:id  |  id: number** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "authorId":     "integer, optional, not empty",
+        "genreId":      "integer, optional, not empty",
+        "title":        "string, optional, not empty",
+        "description":  "string, optional, not empty"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "authorId":     "integer",
+      "genreId":      "integer",
+      "title":        "string",
+      "description":  "string"
+    }
+    ```
+- **DELETE /:id  |  id: number** (This can only be done by admins!)
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```
+    HttpCode 204
+    ```
