@@ -145,4 +145,6 @@ This can only be done by admins!
       }
       ```
   - **output format**
+    ```
     HttpCode: 204
+    ```
