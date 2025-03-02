@@ -371,7 +371,7 @@ These can only be done by admins!
 
 ---
 
-<h3 id="books"> /books</id>
+<h3 id="books"> /books</h3>
 
 - **GET /?authorId&genreId  |  authorId: number, optional; genreId: number, optional**<p id="get-books"></p>
   - **output format**
