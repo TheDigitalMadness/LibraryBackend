@@ -8,29 +8,61 @@ All routes start with "website/route"
 
 <ul>
 <li>
-<b>/register</b>
+<b>POST /register</b>
 <br>
 <ul>
 <li>
 <b>input format:</b>
 </li>
-{ <br>
-  "email": email, not empty <br>
-  "password": string, not empty <br>
-  "username": string <br>
+Body: { <br>
+  "email":     email, not empty <br>
+  "password":  string, not empty <br>
+  "username":  string <br>
 }
 <li>
 <b>output format:</b>
 </li>
 { <br>
-  "access_token": access_token, string <br>
+  "access_token":  access_token, string <br>
 }
 </ul>
 </li>
 <li>
-<b>/login</b>
+<b>POST /login</b>
+<br>
+<ul>
+<li>
+<b>input format:</b>
+</li>
+Body: { <br>
+  "email":     email, not empty <br>
+  "password":  string, not empty <br>
+  "username":  string <br>
+}
+<li>
+<b>output format:</b>
+</li>
+{ <br>
+  "access_token":  access_token, string <br>
+}
+</ul>
 </li>
 <li>
-<b>/me</b>
+<b>GET /me</b>
+<br>
+<ul>
+<li>
+<b>input format:</b>
+</li>
+Headers{ <br>
+  "Authorization":  "Bearer YOUR_ACCESS_TOKEN" <br>
+}
+<li>
+<b>output format:</b>
+</li>
+{ <br>
+  user (Not configured yet) <br>
+}
+</ul>
 </li>
 </ul>
