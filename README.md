@@ -12,12 +12,12 @@ All routes start with "website/route"
 <br>
 <ul>
 <li>
-inner format:
+<b>inner format:</b>
 </li>
-{
-  "email": email, not empty
-  "password": string, not empty
-  "username": string
+{ <br>
+  "email": email, not empty <br>
+  "password": string, not empty <br>
+  "username": string <br>
 }
 </ul>
 </li>
