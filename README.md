@@ -176,8 +176,7 @@ These can only be done by admins!
     }
     ```
 
-This can only be done by admins!
-- **POST /**
+- **POST /** (This can only be done by admins!)
   - **input format**
     - **Headers:**
       ```json
@@ -211,8 +210,7 @@ This can only be done by admins!
     }
     ```
   
-This can only be done by admins!
-- **PUT /:id  |  id: number**
+- **PUT /:id  |  id: number** (This can only be done by admins!)
   - **input format**
     - **Headers:**
       ```json
@@ -246,8 +244,7 @@ This can only be done by admins!
     }
     ```
 
-This can only be done by admins!
-- **DELETE /:id  |  id: number**
+- **DELETE /:id  |  id: number** (This can only be done by admins!)
   - **input format**
     - **Headers:**
       ```json
