@@ -1,6 +1,38 @@
-# Here is the documentation for my api
+# Here is the documentation for my API
 
-All routes start with "website/route"
+All routes start with `website/route`.
+
+## Table of Contents
+- [Authentication](#authentication)
+  - [POST /register](#post-register)
+  - [POST /login](#post-login)
+  - [GET /me](#get-me)
+- [Users](#users)
+  - [GET /](#get-users)
+  - [GET /:id](#get-usersid)
+  - [GET /:id/books](#get-usersidbooks)
+  - [PUT /:id](#put-usersid)
+  - [DELETE /:id](#delete-usersid)
+- [Authors](#authors)
+  - [GET /](#get-authors)
+  - [GET /:id](#get-authorsid)
+  - [POST /](#post-authors)
+  - [PUT /:id](#put-authorsid)
+  - [DELETE /:id](#delete-authorsid)
+- [Genres](#genres)
+  - [GET /](#get-genres)
+  - [GET /:id](#get-genresid)
+  - [POST /](#post-genres)
+  - [PUT /:id](#put-genresid)
+  - [DELETE /:id](#delete-genresid)
+- [Books](#books)
+  - [GET /](#get-books)
+  - [GET /:id](#get-booksid)
+  - [POST /](#post-books)
+  - [PUT /:id](#put-booksid)
+  - [DELETE /:id](#delete-booksid)
+
+---
 
 ## Routes
 
@@ -53,7 +85,7 @@ All routes start with "website/route"
     }
     ```
 
-
+---
 
 ### /users
 These can only be done by admins!
@@ -149,7 +181,7 @@ These can only be done by admins!
     HttpCode: 204
     ```
 
-
+---
 
 ### /authors
 
@@ -257,7 +289,7 @@ These can only be done by admins!
     HttpCode 204
     ```
 
-
+---
 
 ### /genres
 
@@ -337,7 +369,7 @@ These can only be done by admins!
     HttpCode 204
     ```
 
-
+---
 
 ### /books
 
