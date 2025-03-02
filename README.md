@@ -54,7 +54,7 @@ All routes start with `website/route`.
       "access_token":  "access_token, string"
     }
     ```
-- **POST /login**
+- **POST /login**<p id="post-login"></p>
   - **input format:**
     - **Body:**
       ```json
@@ -70,7 +70,7 @@ All routes start with `website/route`.
       "access_token":  "access_token, string"
     }
     ```
-- **GET /me**
+- **GET /me**<p id="get-me"></p>
   - **input format:**
     - **Headers:**
       ```json
@@ -90,7 +90,7 @@ All routes start with `website/route`.
 <h3 id="users"> /users </h3>
 These can only be done by admins!
 
-- **GET /**
+- **GET /**<p id="get-users"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -107,7 +107,7 @@ These can only be done by admins!
       }
     ]
     ```
-- **GET /:id  |  id: number**
+- **GET /:id  |  id: number**<p id="get-usersid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -122,7 +122,7 @@ These can only be done by admins!
       "username": "string"
     }
     ```
-- **GET /:id/books  |  id: number**
+- **GET /:id/books  |  id: number**<p id="get-usersidbooks"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -143,7 +143,7 @@ These can only be done by admins!
       }
     ]
     ```
-- **PUT /:id  |  id: number**
+- **PUT /:id  |  id: number**<p id="put-usersid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -168,7 +168,7 @@ These can only be done by admins!
       "admin":     "boolean"
     }
     ```
-- **DELETE /:id  |  id: number**
+- **DELETE /:id  |  id: number**<p id="delete-usersid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -185,7 +185,7 @@ These can only be done by admins!
 
 <h3 id="authors"> /authors</h3>
 
-- **GET /**
+- **GET /**<p id="get-authors"></p>
   - **output format**
     ```json
     [
@@ -197,7 +197,7 @@ These can only be done by admins!
       }
     ]
     ```
-- **GET /:id  |  id: number**
+- **GET /:id  |  id: number**<p id="get-authorsid"></p>
   - **output format**
     ```json
     {
@@ -208,7 +208,7 @@ These can only be done by admins!
     }
     ```
 
-- **POST /** (This can only be done by admins!)
+- **POST /** (This can only be done by admins!)<p id="post-authors"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -242,7 +242,7 @@ These can only be done by admins!
     }
     ```
   
-- **PUT /:id  |  id: number** (This can only be done by admins!)
+- **PUT /:id  |  id: number** (This can only be done by admins!)<p id="put-authorsid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -276,7 +276,7 @@ These can only be done by admins!
     }
     ```
 
-- **DELETE /:id  |  id: number** (This can only be done by admins!)
+- **DELETE /:id  |  id: number** (This can only be done by admins!)<p id="delete-authorsid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -293,7 +293,7 @@ These can only be done by admins!
 
 <h3 id="genres"> /genres</h3>
 
-- **GET /**
+- **GET /**<p id="get-genres"></p>
   - **output format**
     ```json
     [
@@ -303,7 +303,7 @@ These can only be done by admins!
       }
     ]
     ```
-- **GET /:id  |  id: number**
+- **GET /:id  |  id: number**<p id="get-genresid"></p>
   - **output format**
     ```json
     {
@@ -312,7 +312,7 @@ These can only be done by admins!
     }
     ```
 
-- **POST /** (This can only be done by admins!)
+- **POST /** (This can only be done by admins!)<p id="post-genres"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -334,7 +334,7 @@ These can only be done by admins!
     }
     ```
   
-- **PUT /:id  |  id: number** (This can only be done by admins!)
+- **PUT /:id  |  id: number** (This can only be done by admins!)<p id="put-genresid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -356,7 +356,7 @@ These can only be done by admins!
     }
     ```
 
-- **DELETE /:id  |  id: number** (This can only be done by admins!)
+- **DELETE /:id  |  id: number** (This can only be done by admins!)<p id="delete-genresid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -373,7 +373,7 @@ These can only be done by admins!
 
 <h3 id="books"> /books</id>
 
-- **GET /?authorId&genreId  |  authorId: number, optional; genreId: number, optional**
+- **GET /?authorId&genreId  |  authorId: number, optional; genreId: number, optional**<p id="get-books"></p>
   - **output format**
     ```json
     [
@@ -386,7 +386,7 @@ These can only be done by admins!
       }
     ]
     ```
-- **GET /:id  |  id: number**
+- **GET /:id  |  id: number**<p id="get-booksid"></p>
   - **output format**
     ```json
     {
@@ -397,7 +397,7 @@ These can only be done by admins!
       "description":  "string"
     }
     ```
-- **POST /** (This can only be done by admins!)
+- **POST /** (This can only be done by admins!)<p id="post-books"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -424,7 +424,7 @@ These can only be done by admins!
       "description":  "string"
     }
     ```
-- **PUT /:id  |  id: number** (This can only be done by admins!)
+- **PUT /:id  |  id: number** (This can only be done by admins!)<p id="put-booksid"></p>
   - **input format**
     - **Headers:**
       ```json
@@ -451,7 +451,7 @@ These can only be done by admins!
       "description":  "string"
     }
     ```
-- **DELETE /:id  |  id: number** (This can only be done by admins!)
+- **DELETE /:id  |  id: number** (This can only be done by admins!)<p id="delete-booksid"></p>
   - **input format**
     - **Headers:**
       ```json
