@@ -11,15 +11,15 @@ All routes start with "website/route"
     - **Body:**
       ```json
       {
-        "email":     email, not empty
-        "password":  string, not empty
-        "username":  string
+        "email":     "email, not empty",
+        "password":  "string, not empty",
+        "username":  "string"
       }
       ```
   - **output format:**
     ```json
     {
-      "access_token":  access_token, string
+      "access_token":  "access_token, string"
     }
     ```
 - **POST /login**
@@ -27,15 +27,15 @@ All routes start with "website/route"
     - **Body:**
       ```json
       {
-        "email":     email, not empty
-        "password":  string, not empty
-        "username":  string
+        "email":     "email, not empty",
+        "password":  "string, not empty",
+        "username":  "string"
       }
       ```
   - **output format:**
     ```json
     {
-      "access_token":  access_token, string
+      "access_token":  "access_token, string"
     }
     ```
 - **GET /me**
@@ -49,6 +49,6 @@ All routes start with "website/route"
   - **output format:**
     ```json
     {
-      user (Not configured yet)
+      "user": "(Not configured yet)"
     }
     ```
