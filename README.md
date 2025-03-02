@@ -43,7 +43,7 @@ All routes start with "website/route"
     - **Headers:**
       ```json
       {
-        "Authorization":  "Bearer YOUR_ACCESS_TOKEN" <br>
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
       }
       ```
   - **output format:**
@@ -52,3 +52,95 @@ All routes start with "website/route"
       "user": "(Not configured yet)"
     }
     ```
+
+### /users
+This can only be done by admins!
+
+- **GET /**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```json
+    [
+      {
+        "id": "integer",
+        "username": "string"
+      }
+    ]
+    ```
+- **GET /:id  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id": "integer",
+      "username": "string"
+    }
+    ```
+- **GET /:id/books  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```json
+    [
+      {
+        "id":           "integer",
+        "title":        "string",
+        "description":  "string",
+        "genreId":      "integer",
+        "authorId":     "integer",
+        "borrowerId":   "integer"
+      }
+    ]
+    ```
+- **PUT /:id  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "email":     "email, optional, not empty",
+        "username":  "string, optional, not empty",
+        "admin":     "boolean, optional, not empty"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":        "integer",
+      "email":     "string",
+      "username":  "string",
+      "admin":     "boolean"
+    }
+    ```
+- **DELETE /:id  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    HttpCode: 204
