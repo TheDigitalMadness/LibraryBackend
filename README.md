@@ -36,9 +36,9 @@ All routes start with `website/route`.
 
 ## Routes
 
-### /auth
+<h3 id="authentication"> /auth </h3>
 
-- **POST /register**
+- <h4 id="post-register">POST /register</h4>
   - **input format:**
     - **Body:**
       ```json
@@ -87,7 +87,7 @@ All routes start with `website/route`.
 
 ---
 
-### /users
+<h3 id="users"> /users </h3>
 These can only be done by admins!
 
 - **GET /**
@@ -183,7 +183,7 @@ These can only be done by admins!
 
 ---
 
-### /authors
+<h3 id="authors"> /authors</h3>
 
 - **GET /**
   - **output format**
@@ -291,7 +291,7 @@ These can only be done by admins!
 
 ---
 
-### /genres
+<h3 id="genres"> /genres</h3>
 
 - **GET /**
   - **output format**
@@ -371,7 +371,7 @@ These can only be done by admins!
 
 ---
 
-### /books
+<h3 id="books"> /books</id>
 
 - **GET /?authorId&genreId  |  authorId: number, optional; genreId: number, optional**
   - **output format**
