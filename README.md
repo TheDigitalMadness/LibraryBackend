@@ -38,7 +38,7 @@ All routes start with `website/route`.
 
 <h3 id="authentication"> /auth </h3>
 
-- <h4 id="post-register">POST /register</h4>
+- **POST /register**<p id="post-register"></p>
   - **input format:**
     - **Body:**
       ```json
