@@ -56,7 +56,7 @@ All routes start with "website/route"
 
 
 ### /users
-This can only be done by admins!
+These can only be done by admins!
 
 - **GET /**
   - **input format**
@@ -147,4 +147,115 @@ This can only be done by admins!
   - **output format**
     ```
     HttpCode: 204
+    ```
+
+
+
+### /authors
+
+- **GET /**
+  - **output format**
+    ```json
+    [
+      {
+        "id":           "integer",
+        "name":         "string",
+        "surname":      "string",
+        "description":  "string"
+      }
+    ]
+    ```
+- **GET /:id  |  id: number**
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "name":         "string",
+      "surname":      "string",
+      "description":  "string"
+    }
+    ```
+
+This can only be done by admins!
+- **POST /**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "name":         "string",
+        "surname":      "string",
+        "description":  "string, optional"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "name":         "string",
+      "surname":      "string",
+      "description":  "string | null",
+      "books": [
+        {
+          "id":           "integer",
+          "genreId":      "integer",
+          "title":        "string",
+          "description":  "string"
+        }
+      ]
+    }
+    ```
+  
+This can only be done by admins!
+- **PUT /:id  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+    - **Body:**
+      ```json
+      {
+        "name":         "string, optional, not empty",
+        "surname":      "string, optional, not empty",
+        "description":  "string, optional"
+      }
+      ```
+  - **output format**
+    ```json
+    {
+      "id":           "integer",
+      "name":         "string",
+      "surname":      "string",
+      "description":  "string | null",
+      "books": [
+        {
+          "id":           "integer",
+          "genreId":      "integer",
+          "title":        "string",
+          "description":  "string"
+        }
+      ]
+    }
+    ```
+
+This can only be done by admins!
+- **DELETE /:id  |  id: number**
+  - **input format**
+    - **Headers:**
+      ```json
+      {
+        "Authorization":  "Bearer YOUR_ACCESS_TOKEN"
+      }
+      ```
+  - **output format**
+    ```
+    HttpCode 204
     ```
