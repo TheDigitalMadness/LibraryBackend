@@ -14,7 +14,7 @@ All routes start with "website/route"
 <li>
 <b>input format:</b>
 </li>
-Body: { <br>
+<b>Body: </b>{ <br>
   "email":     email, not empty <br>
   "password":  string, not empty <br>
   "username":  string <br>
@@ -34,11 +34,11 @@ Body: { <br>
 <li>
 <b>input format:</b>
 </li>
-Body: { <br>
+<p><b>Body: </b>{ <br>
   "email":     email, not empty <br>
   "password":  string, not empty <br>
   "username":  string <br>
-}
+}</p>
 <li>
 <b>output format:</b>
 </li>
@@ -54,7 +54,7 @@ Body: { <br>
 <li>
 <b>input format:</b>
 </li>
-Headers{ <br>
+<b>Headers: </b>{ <br>
   "Authorization":  "Bearer YOUR_ACCESS_TOKEN" <br>
 }
 <li>
